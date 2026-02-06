@@ -1,0 +1,127 @@
+.skills {
+  background: var(--dark-bg);
+}
+
+.skills-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.skills-bars h3,
+.tools-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: var(--text-primary);
+}
+
+.skill-item {
+  margin-bottom: 25px;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.skill-name {
+  flex: 1;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.skill-percent {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.skill-bar {
+  height: 8px;
+  background: var(--card-bg);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: var(--gradient-1);
+  border-radius: 4px;
+  transition: width 1s ease;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.tool-item {
+  background: var(--card-bg);
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.tool-item:hover {
+  border-color: var(--primary-color);
+  color: var(--text-primary);
+  transform: translateY(-3px);
+}
+
+.experience-box {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(108, 99, 255, 0.2);
+}
+
+.experience-box h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+.experience-box ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.experience-box li {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.experience-box li:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 968px) {
+  .skills-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-box ul {
+    grid-template-columns: 1fr;
+  }
+}
